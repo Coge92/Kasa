@@ -1,0 +1,22 @@
+@import 'variables' ;
+
+.header {
+    @include spacearoundblock;
+    font-size: $fontsizeheader;
+    font-weight: $fontweight;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 50px;
+
+
+
+
+    }
+}
