@@ -1,14 +1,14 @@
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
-import Composant404 from '../components/404.jsx'
+import Logement from '../components/Logement.jsx'
 
 
-function page404() {
+function PageLogement() {
   return <>
     <Header></Header>
-    <Composant404></Composant404>
+    <Logement></Logement>
     <Footer></Footer>
     </>
 }
 
-export default page404;
+export default PageLogement;

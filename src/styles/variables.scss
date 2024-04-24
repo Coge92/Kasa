@@ -10,4 +10,10 @@ $fontweight : 500;
 @mixin spacearoundblock {
 
     margin: 45px 100px;
+
+    @media screen and (max-width: 767px) {
+
+    margin: 20px;
+        
+    }
 }

@@ -9,9 +9,27 @@
     align-items: center;
     gap: 45px;
 
+    @media screen and (max-width: 767px) {
+        gap: 10px;
+    }
+
+    img {
+        @media screen and (max-width: 767px) {
+            width: 120px;
+        }
+    }
+
     p {
         font-size: $fontsizeheader;
         font-weight: $fontweight;
         color: $fontPrimaryColor;
+
+        @media screen and (max-width: 767px) {
+            
+            font-size: 12px;
+            width: 120px;
+            text-align: center;
+
+        }
     }
 }

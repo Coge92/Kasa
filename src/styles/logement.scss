@@ -1,0 +1,192 @@
+@import 'variables' ;
+
+.logement {
+
+    @include spacearoundblock;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .leading {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            gap: 15px;
+        }
+    
+        .leftside {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: left;
+            gap: 15px;
+
+            h2 {
+                color: $fontTertiaryColor;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 18px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .tags {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+
+                @media screen and (max-width: 767px) {
+                    flex-wrap: wrap;
+    
+                }
+
+                &__item {
+
+                    background-color: $fontTertiaryColor;
+                    color: $fontPrimaryColor;
+                    padding: 5px 40px;
+                    border-radius: 15px;
+                    font-size: 14px;
+                    font-weight: 700;
+
+                    @media screen and (max-width: 767px) {
+                        font-size: 10px;
+                        font-weight: 500;
+                        padding: 5px 30px;
+                        flex-wrap: wrap;
+                        border-radius: 5px;
+        
+                    }
+                }
+            }
+        }
+    
+        .rightside {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: right; 
+            gap: 25px;
+            color: $fontTertiaryColor;
+
+            @media screen and (max-width: 767px) {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+
+            .owner {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-content: center;
+                gap: 15px;
+
+                &__names {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-end;
+                    gap: 10px;
+
+                    @media screen and (max-width: 767px) {
+                        gap: 5px;
+
+                    }
+
+                    p {
+                        font-size: 18px;
+                        font-weight: $fontweight;
+
+                        @media screen and (max-width: 767px) {
+                            font-size: 12px;
+    
+                        }
+                    }
+                }
+
+                img {
+                    width: 60px;
+                    border-radius: 30px;
+
+                    @media screen and (max-width: 767px) {
+                        width: 32px
+
+                    }
+                }
+            }
+
+            .starscontainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 15px;
+
+
+                @media screen and (max-width: 767px) {
+                    gap: 5px;
+
+                }
+
+                .star {
+                    font-size: 1.5em;
+
+                    @media screen and (max-width: 767px) {
+                        font-size: 1em;
+
+                    }
+
+                    &--off {
+                        font-size: 1.5em;
+                        color: grey;
+                        opacity: 0.2;
+
+                        @media screen and (max-width: 767px) {
+                            font-size: 1em;
+    
+                        }
+
+                    }
+                    
+                }               
+            }
+    
+        }
+    }
+
+    .details {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 70px;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            gap: 20px;
+          
+        }
+
+        .description, .equipments {
+
+            width: 100%;
+
+            @media screen and (max-width: 767px) {
+                // height: 30px;   
+            }
+        }
+    }
+}

@@ -9,6 +9,10 @@
     gap: 100px;
     margin: 150px 0;
 
+    @media screen and (max-width: 767px) {
+        margin: 120px 0;
+    }
+
     h1, h2 {
         color: $fontTertiaryColor;
     }
@@ -16,15 +20,33 @@
     h1 {
         font-size: 288px;
         font-weight: 700;
+
+        @media screen and (max-width: 767px) {
+            font-size: 96px;
+        }
     }
 
     h2 {
         font-size: 36px;
         font-weight: 500;
+
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+            width: 260px;
+            text-align: center;
+            line-height: 150%;
+        }
     }
+
+
 
     p {
         font-size: 18px;
         font-weight: $fontweight;
+        text-decoration: underline;
+
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+        }
     }
 }

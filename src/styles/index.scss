@@ -19,7 +19,7 @@ time, mark, audio, video {
 	border: 0;
 	font-family: "montserrat";
 	vertical-align: baseline;
-  color: $fontSecondaryColor
+  
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -47,11 +47,17 @@ table {
 
 a {
   text-decoration: none;
+  color: $fontSecondaryColor
 }
 
 h1 {
   font-size: 48px;
   font-weight: 700;
+}
+
+h2 {
+	font-size: 36px ;
+	font-weight: 500;
 }
 
 h3 {

@@ -1,14 +1,14 @@
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
-import Composant404 from '../components/404.jsx'
+import APropos from '../components/APropos.jsx'
 
 
-function page404() {
+function PageAPropos() {
   return <>
     <Header></Header>
-    <Composant404></Composant404>
+    <APropos></APropos>
     <Footer></Footer>
     </>
 }
 
-export default page404;
+export default PageAPropos;

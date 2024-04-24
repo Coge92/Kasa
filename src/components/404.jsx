@@ -1,5 +1,5 @@
 import '../styles/404.scss'
-import Accueil from '../App'
+import { NavLink } from 'react-router-dom';
 
 
 function Composant404() {
@@ -8,7 +8,7 @@ function Composant404() {
         <div className="class404">
         <h1>404</h1>
         <h2>Oups! La page que vous demandez n'existe pas.</h2>
-        <p onClick={Accueil}>retourner sur la page d'accueil</p>
+        <p><NavLink to={`/`}>Retourner sur la page d'accueil</NavLink></p>
         </div>
     </>
 }

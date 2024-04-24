@@ -1,16 +1,31 @@
-import Header from '../src/components/Header.jsx'
-import Body from './components/Body.jsx';
-import Footer from './components/Footer.jsx'
-import Composant404 from './components/404.jsx'
-import APropos from './components/APropos.jsx';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Home from './pages/Home';
+import PageAPropos from './pages/PageAPropos';
+
+import Page404 from './pages/Page404';
+import PageLogement from './pages/PageLogement';
+
+const router = createBrowserRouter([
+  /* Création d'un tableau pour définir les routes */ 
+      { /* Première route entre accolades (objet) pour définir des paramètres de la route */
+        path: '/',
+        element: <Home></Home>,
+        errorElement: <Page404/>,
+      },
+      { 
+      path: '/apropos',
+      element: <PageAPropos></PageAPropos>,
+      },
+      { 
+        path: '/logement/:id',
+        element: <PageLogement></PageLogement>,
+      },
+    ]
+)
 
 function App() {
   return <>
-    <Header></Header>
-    {/* <Body></Body> */}
-    {/* <Composant404></Composant404> */}
-    <APropos></APropos>
-    <Footer></Footer>
+    <RouterProvider router={router}></RouterProvider> {/* Pour charger le router avec les liens */}
     </>
 }
 
