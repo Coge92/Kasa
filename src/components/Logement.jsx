@@ -8,10 +8,9 @@ import CollapseButton from '../components/CollapseButton.jsx'
 import listeLogement from '../datas/logements.json'
 import Carrousel from './Carrousel.jsx';
 
-
 function Logement() {
-
-    const {id} = useParams()
+    
+    const {id} = useParams();
     const logement = listeLogement[id]
     let starRank = parseInt(logement.rating)
     let shiningStars = []
@@ -33,7 +32,6 @@ function Logement() {
             starsOff.push(i)
         }
         return starsOff
-        
     }
 
     let namesSplited =[]
@@ -43,6 +41,7 @@ function Logement() {
         let name = logement.host.name
         namesSplited = name.split(" ");
     }
+
 
     return <>
         <main className='logement'>
@@ -100,6 +99,7 @@ function Logement() {
             </section>
         </main> 
     </>
+    
 }
 
 export default Logement;
