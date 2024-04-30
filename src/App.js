@@ -18,7 +18,7 @@ function App() {
           <Route path="/logement/:id" element={<PageLogement></PageLogement>} />
           <Route path="*" element={<Page404></Page404>} />
         </Routes>
-    </BrowserRouter>;
+    </BrowserRouter>
     </>
 }
 

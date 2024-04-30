@@ -19,7 +19,7 @@ function Logement() {
     displayStarsRating()
     function displayStarsRating() {
 
-        for( let i = 0 ; i < starRank ; i++) {
+        for(let i = 0 ; i < starRank ; i++) {
             shiningStars.push(i)  
         }
         return shiningStars
